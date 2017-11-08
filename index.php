@@ -24,8 +24,8 @@
 <body class="login-page login_bg">
     <div class="login-box">
         <div class="logo">
-            <a href="#">SITE<b>NAME</b></a>
-            <small>Admin login</small>
+            <a href="#"><img src="images/btlogo.png" alt="" width="50%">Billion<b>tools</b></a>
+            <!-- <small>Admin login</small> -->
         </div>
         <div class="card">
             <div class="body">

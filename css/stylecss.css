@@ -38,8 +38,9 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-/*     min-height: 100vh; */
+    /*     min-height: 100vh; */
 }
+
 
 
 
@@ -266,4 +267,137 @@ section.content {
     color: #666 !important;
     font-weight: normal;
     font-size: 25px;
+}
+
+.btn-warning,
+.btn-warning:hover,
+.btn-warning:active,
+.btn-warning:focus {
+    background-color: #fed032 !important;
+    color: #808080;
+}
+
+.login-page .login-box a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #808080;
+}
+
+.theme-amber .navbar {
+    background-color: #fed032;
+}
+
+.sidebar .user-info {
+    background: #fed032;
+    color: #808080
+}
+
+.navbar-header {
+    width: 300px;
+    text-align: center;
+}
+
+.navbar-brand {
+    padding: 15px 75px;
+}
+
+.main_nav li.active {
+    background: #808080
+}
+
+.main_nav li a {
+    padding: 25px 40px;
+    margin: 0;
+}
+
+.draggable {
+    width: 25px;
+    height: 32px;
+    padding: 2px 3px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 14px;
+    background-image: url(../images/marker.png);
+    color: black;
+    position: relative;
+    background-size: cover;
+    background-position: top;
+    cursor: grab;
+    display: inline-block;
+    left: 0;
+    top: 0;
+}
+
+
+/* .draggable:after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        transform: rotate(45deg);
+        background: orange;
+        bottom: 0;
+        top: 83%;
+        left: 30%;
+    } */
+
+.ui-widget-header {
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+.ui-widget-header p,
+.ui-widget-content p {
+    margin: 0;
+}
+
+#snaptarget {
+    width: 100%;
+    /* height: 500px;
+        border: 3px dashed black; */
+}
+
+.drag_list li {
+    border-bottom: 8px;
+}
+
+.item_selection {
+    display: inline-block;
+}
+
+.drawing-id {
+    border: 3px dashed black;
+    border-bottom: 0;
+    padding: 5px 15px;
+}
+
+.image-block {
+    background: #eee;
+    margin-top: 15px;
+    position: relative;
+}
+
+.value-box {
+    margin-top: 15px;
+    border: 2px solid #eee;
+    padding: 10px;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.draggable-bb {
+    position: absolute;
+}
+
+.drawing-id {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
