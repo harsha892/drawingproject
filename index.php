@@ -81,7 +81,7 @@
     <script src="js/pages/examples/sign-in.js"></script>
     <script>
     $('.get_dashboard').click(function() {
-        window.location.assign("dashboard.html");
+        window.location.assign("home.html");
     })
     </script>
 </body>

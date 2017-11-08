@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>graphical view of user</title>
+    <title>ChartJS | Bootstrap Based Admin Template - Material Design</title>
     <!-- Favicon-->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!-- Google Fonts -->
@@ -63,14 +63,6 @@
                 <a href="javascript:void(0);" class="bars"></a>
                 <a class="navbar-brand" href="index.html"><img src="images/btlogo-2.png" alt="" height="30px"> Billiontools</a>
             </div>
-            <div class="collapse navbar-collapse" id="navbar-collapse">
-                <ul class="nav navbar-nav main_nav">
-                    <!-- Call Search -->
-                    <li><a href="drawing.html" class="">Drawings's List</a></li>
-                    <li class="active"><a href="graphicdrawing.html" class="">Grpahical View of Drawings</a></li>
-                    <!-- #END# Call Search -->
-                </ul>
-            </div>
         </div>
     </nav>
     <!-- #Top Bar -->
@@ -100,7 +92,7 @@
             <div class="menu">
                 <ul class="list">
                     <li class="header">MAIN NAVIGATION</li>
-                    <li>
+                    <li class="active">
                         <a href="home.html">
                             <i class="material-icons">home</i>
                             <span>Dashboard</span>
@@ -112,7 +104,7 @@
                             <span>Users</span>
                         </a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="drawing.html">
                             <i class="material-icons">home</i>
                             <span>Drawings</span>
@@ -140,26 +132,44 @@
         <!-- #END# Right Sidebar -->
     </section>
     <section class="content">
+        <br>
+        <br>
         <div class="container-fluid">
             <div class="block-header db_header">
                 <div class="col-xs-12 col-sm-6">
                     <h1 class="db_title">
-                    Graphical View of Drawings's
+                    Graphical View
                 </h1>
                 </div>
-                <div class="col-xs-12 col-sm-6">
-                    <h1 class="text-right">
-                    <a href="newdrawing.html" class="btn btn-warning btn-lg waves-effect">ADD NEW DRAWING</a>
-                    </h1>
-                </div>
+               
                 <div class="clearfix"></div>
             </div>
             <div class="row clearfix">
-                <!-- Bar Chart -->
-                <div class="col-xs-12">
+                <!-- Line Chart -->
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="card hide">
+                        <div class="header">
+                            <h2 class="text-capitalize">User registrations monthwise</h2>
+                            <ul class="header-dropdown m-r--5">
+                                <li class="dropdown">
+                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">more_vert</i>
+                                    </a>
+                                    <ul class="dropdown-menu pull-right">
+                                        <li><a href="javascript:void(0);">Action</a></li>
+                                        <li><a href="javascript:void(0);">Another action</a></li>
+                                        <li><a href="javascript:void(0);">Something else here</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="body">
+                            <canvas id="line_chart" height="150"></canvas>
+                        </div>
+                    </div>
                     <div class="card">
                         <div class="header">
-                            <h2>BAR CHART</h2>
+                            <h2 class="text-capitalize">User registrations monthwise</h2>
                             <ul class="header-dropdown m-r--5">
                                 <li class="dropdown">
                                     <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -178,81 +188,31 @@
                         </div>
                     </div>
                 </div>
-                <!-- Line Chart -->
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 hide">
-                    <div class="card">
-                        <div class="header">
-                            <h2>LINE CHART</h2>
-                            <ul class="header-dropdown m-r--5">
-                                <li class="dropdown">
-                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                        <i class="material-icons">more_vert</i>
-                                    </a>
-                                    <ul class="dropdown-menu pull-right">
-                                        <li><a href="javascript:void(0);">Action</a></li>
-                                        <li><a href="javascript:void(0);">Another action</a></li>
-                                        <li><a href="javascript:void(0);">Something else here</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="body">
-                            <canvas id="line_chart" height="150"></canvas>
-                        </div>
-                    </div>
-                </div>
                 <!-- #END# Line Chart -->
+                <!-- Bar Chart -->
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>Drawings month wise</h2>
+                            <ul class="header-dropdown m-r--5">
+                                <li class="dropdown">
+                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">more_vert</i>
+                                    </a>
+                                    <ul class="dropdown-menu pull-right">
+                                        <li><a href="javascript:void(0);">Action</a></li>
+                                        <li><a href="javascript:void(0);">Another action</a></li>
+                                        <li><a href="javascript:void(0);">Something else here</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="body">
+                            <canvas id="bar_chart2" height="150"></canvas>
+                        </div>
+                    </div>
+                </div>
                 <!-- #END# Bar Chart -->
-            </div>
-            <div class="row clearfix hide">
-                <!-- Radar Chart -->
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="card">
-                        <div class="header">
-                            <h2>RADAR CHART</h2>
-                            <ul class="header-dropdown m-r--5">
-                                <li class="dropdown">
-                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                        <i class="material-icons">more_vert</i>
-                                    </a>
-                                    <ul class="dropdown-menu pull-right">
-                                        <li><a href="javascript:void(0);">Action</a></li>
-                                        <li><a href="javascript:void(0);">Another action</a></li>
-                                        <li><a href="javascript:void(0);">Something else here</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="body">
-                            <canvas id="radar_chart" height="150"></canvas>
-                        </div>
-                    </div>
-                </div>
-                <!-- #END# Radar Chart -->
-                <!-- Pie Chart -->
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="card">
-                        <div class="header">
-                            <h2>PIE CHART</h2>
-                            <ul class="header-dropdown m-r--5">
-                                <li class="dropdown">
-                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                        <i class="material-icons">more_vert</i>
-                                    </a>
-                                    <ul class="dropdown-menu pull-right">
-                                        <li><a href="javascript:void(0);">Action</a></li>
-                                        <li><a href="javascript:void(0);">Another action</a></li>
-                                        <li><a href="javascript:void(0);">Something else here</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="body">
-                            <canvas id="pie_chart" height="150"></canvas>
-                        </div>
-                    </div>
-                </div>
-                <!-- #END# Pie Chart -->
             </div>
         </div>
     </section>

@@ -27,7 +27,16 @@
     src: url('../fonts/JennaSue.woff');
     src: local('JennaSue'), local('JennaSue'), url('../fonts/JennaSue.woff') format('WOFF');
 }
-
+@font-face {
+    font-family: 'youregone';
+    src: url('../fonts/youregone.woff');
+    src: local('youregone'), local('youregone'), url('../fonts/youregone.woff') format('woff');
+}
+@font-face {
+    font-family: 'youregoneit';
+    src: url('../fonts/youregoneit.woff');
+    src: local('youregoneit'), local('youregoneit'), url('../fonts/youregoneit.woff') format('woff');
+}
 body {
     font-family: "Montserrat";
 }
@@ -42,8 +51,14 @@ body {
 }
 
 
+.navbar-brand>img {
+    display: inline-block;
+}
 
-
+.login-page .login-box .logo {
+    margin-bottom: 20px;
+    font-family: "youregone";
+}
 
 
 /* 
@@ -267,6 +282,7 @@ section.content {
     color: #666 !important;
     font-weight: normal;
     font-size: 25px;
+    margin: 0;
 }
 
 .btn-warning,
@@ -276,7 +292,13 @@ section.content {
     background-color: #fed032 !important;
     color: #808080;
 }
-
+.btn-warning2,
+.btn-warning2:hover,
+.btn-warning2:active,
+.btn-warning2:focus {
+    background-color: #808080 !important;
+    color: #fed032;
+}
 .login-page .login-box a {
     font-size: 14px;
     text-decoration: none;
@@ -288,17 +310,25 @@ section.content {
 }
 
 .sidebar .user-info {
-    background: #fed032;
-    color: #808080
+    background: #808080;
+    color: #fed032
 }
 
 .navbar-header {
     width: 300px;
     text-align: center;
 }
-
+.navbar-brand > img {
+    margin-right: 8px;
+}
 .navbar-brand {
-    padding: 15px 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: "youregone";
+    text-shadow: 1px 1px 1px #000;
 }
 
 .main_nav li.active {
@@ -327,6 +357,7 @@ section.content {
     left: 0;
     top: 0;
 }
+
 
 
 /* .draggable:after {
@@ -400,4 +431,7 @@ section.content {
     position: absolute;
     top: 0;
     right: 0;
+}
+.no-margin{
+    margin: 0;
 }
