@@ -1,5 +1,6 @@
 $(function () {
     getMorris('line', 'line_chart');
+    getMorris('line', 'line_chart2');
     getMorris('bar', 'bar_chart');
     getMorris('area', 'area_chart');
     getMorris('donut', 'donut_chart');
