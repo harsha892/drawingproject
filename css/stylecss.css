@@ -306,7 +306,7 @@ section.content {
 .login-page .login-box a {
     font-size: 14px;
     text-decoration: none;
-    color: #808080;
+    color: #fed032 !important;
 }
 
 .theme-amber .navbar {
