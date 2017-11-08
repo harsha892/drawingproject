@@ -60,6 +60,8 @@ body {
 .login-page .login-box .logo {
     margin-bottom: 20px;
     font-family: "youregone";
+    color: #fed032;
+    text-shadow: 1px 1px 1px #000;
 }
 
 
